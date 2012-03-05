@@ -7,6 +7,25 @@
     border: 1px solid #000;
   }
 </style>
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+    window.fbAsyncInit = function() {
+        //Your app details here
+        FB.init({appId: '243276819098743', status: true, cookie: true, xfbml: true});
+        //Resize the iframe when needed
+        FB.Canvas.setAutoGrow(); //setAutoResize();
+    };
+    
+    //Load the SDK asynchronously
+    (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol +
+          '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+    }());
+</script>
+
 <div id="home" class="foo">
   
 </div>
