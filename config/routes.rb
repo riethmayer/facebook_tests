@@ -1,4 +1,7 @@
 FacebookTests::Application.routes.draw do
+
+  match '/' => "home#index", via: [:post, :get]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
